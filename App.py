@@ -14,7 +14,7 @@ from twilio.rest import Client
 from threading import Lock
 
 # -----------------------------
-# Twilio configuration (UNCHANGED)
+# Twilio configuration 
 # -----------------------------
 TWILIO_SID = os.getenv("TWILIO_SID")
 TWILIO_AUTH = os.getenv("TWILIO_AUTH")
@@ -70,7 +70,7 @@ CNN_THRESHOLD = 0.35
 HEAD_TILT_THRESHOLD = 0.23
 
 # -----------------------------
-# Model load (warning removed)
+# Model load 
 # -----------------------------
 try:
     model = tf.keras.models.load_model("best_eye_model_v2.h5", compile=False)
@@ -86,7 +86,7 @@ st.markdown("---")
 st.markdown("<p style='text-align: center; color: gray;'>Developed by Haidar Raza</p>", unsafe_allow_html=True)
 
 # -----------------------------
-# Helper functions (UNCHANGED)
+# Helper functions 
 # -----------------------------
 def eye_aspect_ratio(landmarks, eye_indices):
     p1 = np.array([landmarks[eye_indices[0]].x, landmarks[eye_indices[0]].y])
@@ -131,7 +131,7 @@ def calculate_mouth_open_ratio(landmarks):
         return 0
 
 # -----------------------------
-# Twilio helpers (UNCHANGED)
+# Twilio helpers 
 # -----------------------------
 def verify_number(number, verified_list):
     if not number:
@@ -150,7 +150,7 @@ def send_twilio_alert(to_number, message, verified_list):
         return False
 
 # -----------------------------
-# Streamlit UI (UNCHANGED)
+# Streamlit UI 
 # -----------------------------
 st.set_page_config(page_title="Driver Drowsiness Detection", layout="wide")
 if "selected_mode" not in st.session_state:
