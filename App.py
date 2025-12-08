@@ -187,8 +187,8 @@ if st.session_state.selected_mode == "ipcam":
     else:
         st.sidebar.warning("Enter IP, Username, and Password to connect IP Camera.")
 
-tw_number1 = st.sidebar.text_input("Twilio Number 1 (E.164, +countrycode...)")
-tw_number2 = st.sidebar.text_input("Twilio Number 2 (E.164, +countrycode...)")
+tw_number1 = st.sidebar.text_input("Enter Number 1 (with +countrycode...)")
+tw_number2 = st.sidebar.text_input("Enter Number 2 (with +countrycode...)")
 verified_text = st.sidebar.text_area("Enter verified numbers (one per line)", height=100)
 verified_list = [n.strip() for n in verified_text.splitlines() if n.strip()]
 
