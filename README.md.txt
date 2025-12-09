@@ -14,4 +14,14 @@ The system detects eye closure, blinks, and signs of drowsiness, then plays an a
 
 ---
 
-## 📂 Project Structure
+## Limitations
+
+Lighting Issues: Poor or uneven lighting reduces detection accuracy.
+
+Hardware Load: Low-performance systems cause processing delays.
+
+Face Coverage: Covered or angled faces reduce landmark accuracy.
+
+Limited Signals: Only eyes, yawning, and head tilt used for drowsiness.
+
+IP Camera Lag: Network delay causes dropped frames and slow alerts.
