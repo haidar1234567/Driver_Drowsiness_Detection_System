@@ -16,9 +16,10 @@ from threading import Lock
 # -----------------------------
 # Twilio configuration 
 # -----------------------------
-TWILIO_SID = os.getenv("TWILIO_SID")
-TWILIO_AUTH = os.getenv("TWILIO_AUTH")
-TWILIO_NUMBER = os.getenv("TWILIO_NUMBER")
+# replace all below credentials with your own twilio account credentials
+TWILIO_SID = "ACxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+TWILIO_AUTH = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+TWILIO_NUMBER = "+xxxxxxxxxxx"
 
 client = Client(TWILIO_SID, TWILIO_AUTH)
 
